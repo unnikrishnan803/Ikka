@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikka (Abhiram) - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --violet: #7c3aed;
+            --dark-grey: #1f2937;
+        }
+        body {
+            background-color: var(--dark-grey);
+            color: #fff;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #7c3aed, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-gray-900 p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold gradient-text">IKKA</h1>
+            <div class="space-x-6">
+                <a href="#home" class="text-violet-400 hover:text-violet-300">Home</a>
+                <a href="#about" class="text-violet-400 hover:text-violet-300">About</a>
+                <a href="#gallery" class="text-violet-400 hover:text-violet-300">Gallery</a>
+                <a href="#work" class="text-violet-400 hover:text-violet-300">Work</a>
+                <a href="#services" class="text-violet-400 hover:text-violet-300">Book Services</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold mb-4 gradient-text">Abhiram</h1>
+            <h2 class="text-3xl mb-6">Known as "Ikka" & "Ikkakaaa"</h2>
+            <p class="text-xl text-gray-300">B.Tech Student | Night Worker | Bridge Professional</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 gradient-text text-center">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl mb-4">Education</h3>
+                    <p class="text-gray-300">
+                        Currently pursuing B.Tech (2nd Year)<br>
+                        College of Engineering, Cherthala
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl mb-4">Location</h3>
+                    <p class="text-gray-300">
+                        Based in Varanadu, Cherthala<br>
+                        Working nights at Fort Kochi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 gradient-text text-center">Gallery</h2>
+            
+            <!-- Videos -->
+            <div class="mb-12">
+                <h3 class="text-2xl mb-6">Videos</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Video examples -->
+                    <video controls class="w-full bg-gray-700 rounded-lg">
+                        <source src="ikk1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls class="w-full bg-gray-700 rounded-lg">
+                        <source src="ikk2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls class="w-full bg-gray-700 rounded-lg">
+                        <source src="ikk3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Photos -->
+            <div>
+                <h3 class="text-2xl mb-6">Photos</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <img src="IMG-20240914-WA0005.jpg" alt="Photo placeholder" class="rounded-lg">
+                    <img src="IMG20240907123319.jpg" alt="Photo placeholder" class="rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 gradient-text text-center">Professional Work</h2>
+            <div class="text-center">
+                <p class="text-xl text-gray-300 mb-6">
+                    Specialized in Under Bridge Construction and Engineering<br>
+                    Night Operations Professional at Fort Kochi
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 gradient-text text-center">Book Services</h2>
+            <form class="max-w-md mx-auto bg-gray-700 p-6 rounded-lg">
+                <div class="mb-4">
+                    <label for="location" class="block text-gray-300 mb-2">Select Location</label>
+                    <select id="location" class="w-full p-2 rounded bg-gray-800 text-white">
+                        <option value="spoot">Fort Kochi - ₹2000</option>
+                        <option value="kundanoor">Kundanoor - ₹2000</option>
+                        <option value="palarivattam">Palarivattam - ₹5000</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-violet-500 hover:bg-violet-600 text-white py-2 px-4 rounded">
+                        Book Now
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2025 Ikka (Abhiram). All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
